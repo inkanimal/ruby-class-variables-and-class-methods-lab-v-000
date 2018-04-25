@@ -37,7 +37,7 @@ class Song
       @@genre_count[genre] << count
    # else
     #  @@genre_count[genre] = [count]
-    #end
+    end
   end
 
   #artist_count returns hash of artists and their songs
