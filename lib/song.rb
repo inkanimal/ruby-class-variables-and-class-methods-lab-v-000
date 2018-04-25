@@ -38,6 +38,7 @@ class Song
     else
       @@genre_count[genre] = [count]
     end
+    self.genre_count[genre]
   end
 
   #artist_count returns hash of artists and their songs
