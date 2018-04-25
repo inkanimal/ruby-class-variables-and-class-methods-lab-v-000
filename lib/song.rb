@@ -24,6 +24,10 @@ class Song
     @@genre
   end
   
+  def self.artists
+    @@artists
+  end
+  
   
 
 
