@@ -32,8 +32,8 @@ class Song
   end
   
   #genre_count returns hash of genres with number of songs in each genre
-  def genre_count()
-    self.genre_count[]
+  def genre_count(genre, count)
+    if 
 
   #artist_count returns hash of artists and their songs
   
