@@ -47,5 +47,7 @@ class Song
   end
 
   #artist_count returns hash of artists and their songs
-
+  def self.artist_count
+    @@artist_count
+  end
 end
