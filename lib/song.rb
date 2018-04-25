@@ -29,6 +29,10 @@ class Song
     @@artists
   end
   
+  #genre_count returns hash of genres with number of songs in each genre
+
+  #artist_count returns hash of artists and their songs
+  
   
 
 
