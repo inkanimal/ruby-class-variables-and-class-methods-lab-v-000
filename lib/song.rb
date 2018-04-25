@@ -9,7 +9,6 @@ class Song
     @name = name
     @artists = artists
     @genre = genre
-    #@genre.push(@@genre)
     @@count += 1
   end
 
