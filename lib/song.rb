@@ -33,7 +33,12 @@ class Song
   
   #genre_count returns hash of genres with number of songs in each genre
   def genre_count(genre, count)
-    if 
+    if @@genre_count.has_key?(genre)
+      @@genre_count[genre] << count
+    else
+      @@genre_count[genre] = [count]
+    end
+  end
 
   #artist_count returns hash of artists and their songs
   
