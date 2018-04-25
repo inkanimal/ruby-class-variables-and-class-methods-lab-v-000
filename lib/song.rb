@@ -24,6 +24,7 @@ class Song
     @@genres
   end
   
+  #artists array must only contain unique artists
   def self.artists
     @@artists
   end
