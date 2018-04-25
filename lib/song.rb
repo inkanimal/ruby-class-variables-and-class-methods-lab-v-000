@@ -23,7 +23,7 @@ class Song
   
   # genre array must only contain unique genres
   def self.genres
-    @@genres
+    @@genres.uniq
   end
   
   #artists array must only contain unique artists
