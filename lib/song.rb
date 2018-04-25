@@ -17,7 +17,7 @@ class Song
   end
   
   @@genre = []
-  
+  # genre array must only contain unique genres
   def self.genre
     @@genre
   end
