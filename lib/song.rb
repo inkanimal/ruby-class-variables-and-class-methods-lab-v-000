@@ -1,7 +1,7 @@
 class Song 
   
   @@count = 0
-  @@genre = []
+  @@genres = []
   @@artists = []
  
   attr_accessor :name, :artist, :genre
@@ -11,7 +11,7 @@ class Song
     @artist = artist
     @@artists.push(@artist)
     @genre = genre
-    @@genre.push(@genre)
+    @@genres.push(@genre)
     @@count += 1
   end
 
@@ -20,8 +20,8 @@ class Song
   end
   
   # genre array must only contain unique genres
-  def self.genre
-    @@genre
+  def self.genres
+    @@genres
   end
   
   def self.artists
