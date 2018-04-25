@@ -11,10 +11,20 @@ class Song
   def initialize(name, artist, genre)
     @name = name
     @artist = artist
-    @@artists.push(@artist)
     @genre = genre
-    @@genres.push(@genre)
     @@count += 1
+    @@artists << artist
+    if @@artist_count[artist] == nil 
+      @@artist_count[artist] = 1 
+    else
+      @@artist_count[artist] += 1 
+    end
+    @@genres << genre 
+    if @@genre_count[genre] == nil 
+      @@genre_count[genre] = 1 
+    else
+      @@genre_count[genre] += 1 
+    end 
   end
 
    def self.count
