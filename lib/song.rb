@@ -28,7 +28,7 @@ class Song
   
   #artists array must only contain unique artists
   def self.artists
-    @@artists
+    @@artists.uniq!
   end
   
   #genre_count returns hash of genres with number of songs in each genre
